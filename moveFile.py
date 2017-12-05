@@ -93,7 +93,7 @@ class Ui_MainWindow(object):
         self.completed=0
         for f in files1:
             self.completed = (cnt1*100/tot1)
-            shutil.copyfile(self.src + "/" + f, self.dest+"/Copied_files/")
+            shutil.copy(self.src + "/" + f, self.dest+"/Copied_files/")
             self.progressBar.setValue(self.completed)
             cnt1 += 1
 
